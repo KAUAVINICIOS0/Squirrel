@@ -3,6 +3,7 @@ package com.bosque.squirrel;
 import java.util.List;
 import com.bosque.algorithms.BubbleSort;
 import com.bosque.algorithms.SelectionSort;
+import com.bosque.algorithms.MergeSort;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -18,11 +19,13 @@ public class SquirrelApplication {
     List<Integer> list = new ArrayList<>();
     list.add(5);
     list.add(6);
-    list.add(2);
-    
+    list.add(0);
+    list.add(1);
+    list.add(7);
+
     System.out.println("lista original: "+ list);
-    SelectionSort selectionSort = new SelectionSort();
-    List<Integer> sortedList = selectionSort.sort(list);
+    MergeSort mergeSort = new MergeSort();
+    List<Integer> sortedList = mergeSort.sort(list, list.size());
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
