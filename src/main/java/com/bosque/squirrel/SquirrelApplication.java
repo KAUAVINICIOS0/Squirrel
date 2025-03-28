@@ -4,6 +4,7 @@ import java.util.List;
 import com.bosque.algorithms.BubbleSort;
 import com.bosque.algorithms.SelectionSort;
 import com.bosque.algorithms.MergeSort;
+import com.bosque.algorithms.QuickSort;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -24,8 +25,8 @@ public class SquirrelApplication {
     list.add(7);
 
     System.out.println("lista original: "+ list);
-    MergeSort mergeSort = new MergeSort();
-    List<Integer> sortedList = mergeSort.sort(list, list.size());
+    QuickSort quickSort = new QuickSort();
+    List<Integer> sortedList = quickSort.sort(list, 0, list.size() - 1);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
