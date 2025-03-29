@@ -1,12 +1,15 @@
 package com.bosque.squirrel;
 
 import java.util.List;
+import java.util.Collections;
+import java.util.ArrayList;
+
 import com.bosque.algorithms.BubbleSort;
 import com.bosque.algorithms.SelectionSort;
 import com.bosque.algorithms.MergeSort;
 import com.bosque.algorithms.QuickSort;
-import java.util.ArrayList;
-import java.util.Collections;
+import com.bosque.algorithms.InsertionSort;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,8 +28,8 @@ public class SquirrelApplication {
     list.add(7);
 
     System.out.println("lista original: "+ list);
-    QuickSort quickSort = new QuickSort();
-    List<Integer> sortedList = quickSort.sort(list, 0, list.size() - 1);
+    InsertionSort insertionSort = new InsertionSort();
+    List<Integer> sortedList = insertionSort.sort(list);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
