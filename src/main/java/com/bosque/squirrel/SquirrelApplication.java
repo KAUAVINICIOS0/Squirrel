@@ -10,6 +10,7 @@ import com.bosque.algorithms.MergeSort;
 import com.bosque.algorithms.QuickSort;
 import com.bosque.algorithms.InsertionSort;
 import com.bosque.algorithms.HeapSort;
+import com.bosque.algorithms.CountingSort;
 
 
 import org.springframework.boot.SpringApplication;
@@ -29,8 +30,8 @@ public class SquirrelApplication {
     list.add(7);
 
     System.out.println("lista original: "+ list);
-    HeapSort heapSort = new HeapSort();
-    List<Integer> sortedList = heapSort.sort(list);
+    CountingSort countingSort = new CountingSort();
+    List<Integer> sortedList = countingSort.sort(list);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
