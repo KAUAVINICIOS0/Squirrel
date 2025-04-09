@@ -11,7 +11,7 @@ import com.bosque.algorithms.QuickSort;
 import com.bosque.algorithms.InsertionSort;
 import com.bosque.algorithms.HeapSort;
 import com.bosque.algorithms.CountingSort;
-
+import com.bosque.algorithms.ShellSort;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -30,8 +30,8 @@ public class SquirrelApplication {
     list.add(7);
 
     System.out.println("lista original: "+ list);
-    CountingSort countingSort = new CountingSort();
-    List<Integer> sortedList = countingSort.sort(list);
+    ShellSort shellSort = new ShellSort();
+    List<Integer> sortedList = shellSort.sort(list);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
