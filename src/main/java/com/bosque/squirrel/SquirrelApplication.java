@@ -12,6 +12,8 @@ import com.bosque.algorithms.InsertionSort;
 import com.bosque.algorithms.HeapSort;
 import com.bosque.algorithms.CountingSort;
 import com.bosque.algorithms.ShellSort;
+import com.bosque.algorithms.RadixSort;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -22,16 +24,11 @@ public class SquirrelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SquirrelApplication.class, args);
     
-    List<Integer> list = new ArrayList<>();
-    list.add(5);
-    list.add(6);
-    list.add(0);
-    list.add(1);
-    list.add(7);
+    List<Integer> list = new ArrayList<>(List.of(170, 45, 75, 90, 802, 24, 2, 66, 80, 1, 5, 3, 4, 6, 12, 10, 9));
 
     System.out.println("lista original: "+ list);
-    ShellSort shellSort = new ShellSort();
-    List<Integer> sortedList = shellSort.sort(list);
+    RadixSort radixSort = new RadixSort();
+    List<Integer> sortedList = radixSort.sort(list);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
