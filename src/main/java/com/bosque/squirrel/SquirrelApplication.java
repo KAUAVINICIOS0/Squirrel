@@ -16,6 +16,8 @@ import com.bosque.algorithms.RadixSort;
 import com.bosque.algorithms.BucketSort;
 import com.bosque.algorithms.TimSort;
 import com.bosque.algorithms.GnomeSort;
+import com.bosque.algorithms.BogoSort;
+
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,11 +28,11 @@ public class SquirrelApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(SquirrelApplication.class, args);
 
-    List<Integer> list = new ArrayList<Integer>(List.of(170, 45, 75, 90, 802, 24, 2, 66, 80, 1, 5, 3, 4, 6, 12, 10, 9));
+    List<Integer> list = new ArrayList<Integer>(List.of(170, 45, 75, 90, 10, 9));
 
     System.out.println("lista original: "+ list);
-    GnomeSort gnomeSort = new GnomeSort();
-    List<Integer> sortedList = gnomeSort.sort(list, 17);
+    BogoSort bogoSort = new BogoSort();
+    List<Integer> sortedList = bogoSort.sort(list);
     System.out.println("lista ordenada: "+ sortedList);
 	}
 
