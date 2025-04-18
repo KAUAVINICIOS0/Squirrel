@@ -6,8 +6,11 @@ import java.util.Collections;
 public class BogoSort{
 
   public List<Integer> sort(List<Integer> _list){
+    //int count = 0;
     while(!isSorted(_list)){
       Collections.shuffle(_list);
+      //System.out.println("try" + count + "Shuffle: " + _list);
+      //count++;
     }
     return _list;
   }
