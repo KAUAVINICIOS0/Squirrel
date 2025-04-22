@@ -80,4 +80,4 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 
 ## Autor
 
-[Seu Nome] - [seu-email@exemplo.com]
+Kauã Vinícios Cruz Bezerra - kaua.vinicios_2005@hotmail.com
